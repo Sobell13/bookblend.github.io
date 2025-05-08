@@ -44,6 +44,7 @@ window.addEventListener("message", (event) => {
 
     if (event.data.type === "PRESENTED_NODE_CHANGED") {
       const nodeId = event.data.data.presentedNodeId;
+      console.log("Changed node to : ", nodeId)
     }
   } else {
     console.warn(
