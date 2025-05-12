@@ -5,10 +5,32 @@ const figmaOrigin = "https://www.figma.com";
 
 const nodeIdString = new Map();
 nodeIdString.set("352:3477", "Log-In");
+
 nodeIdString.set("351:2283", "Homepage");
 nodeIdString.set("593:1895", "Homepage (after changes)");
+
+nodeIdString.set("654:2140", "My books");
+
 nodeIdString.set("534:775", "Before Alchemy");
 nodeIdString.set("421:2577", "Alchemy");
+
+nodeIdString.set("360:2980", "Book - The Library at Mount Char");
+nodeIdString.set("360:2599", "Book - Harry Potter");
+nodeIdString.set("411:1468", "Book - Nevernight");
+
+nodeIdString.set("411:1579", "Book - The strange case of Dr. Jekyll and Mr. Hyde");
+nodeIdString.set("600:1900", "Question - The Library at Mount Char");
+nodeIdString.set("604:2069", "Question - Harry Potter");
+nodeIdString.set("605:2142", "Question - Nevernight");
+nodeIdString.set("605:2218", "Book - The strange case of Dr. Jekyll and Mr. Hyde");
+
+
+nodeIdString.set("605:2291", "Right answer");
+nodeIdString.set("606:2452", "Wrong answer");
+
+
+nodeIdString.set("427:1796", "Chat (unlocked)");
+nodeIdString.set("596:1999", "Chat (locked)");
 
 // Messages to control the prototype
 // Example function
