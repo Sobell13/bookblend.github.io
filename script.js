@@ -2,8 +2,9 @@
 // Constants for the site logic
 const iframe = document.querySelector("#embed-frame");
 const figmaOrigin = "https://www.figma.com";
-
 const nodeIdString = new Map();
+
+// Map set
 nodeIdString.set("352:3477", "Log-In");
 
 nodeIdString.set("351:2283", "Homepage");
@@ -24,10 +25,8 @@ nodeIdString.set("604:2069", "Question - Harry Potter");
 nodeIdString.set("605:2142", "Question - Nevernight");
 nodeIdString.set("605:2218", "Book - The strange case of Dr. Jekyll and Mr. Hyde");
 
-
 nodeIdString.set("605:2291", "Right answer");
 nodeIdString.set("606:2452", "Wrong answer");
-
 
 nodeIdString.set("427:1796", "Chat (unlocked)");
 nodeIdString.set("596:1999", "Chat (locked)");
@@ -51,12 +50,17 @@ function getMapValue(map, key) {
 window.addEventListener("message", (event) => {
   if (event.origin === figmaOrigin) {
     if (event.data.type === "INITIAL_LOAD") {
+      const timestamp = Date.now();
     }
 
     if (event.data.type === "PRESENTED_NODE_CHANGED") {
       const nodeId = event.data.data.presentedNodeId;
       const nodeString = getMapValue(nodeIdString, String(nodeId));
       console.log("Changed node to : ", nodeString);
+      console.log("Time recorded was : ", timestamp);
+      const now = Date.now();
+      const time_diff = now - timestamp;
+      console.log("Difference : ", time_diff);
     }
   } else {
     console.warn(
