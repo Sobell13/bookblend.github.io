@@ -1,9 +1,14 @@
 
 // Constants for the site logic
 const iframe = document.querySelector("#embed-frame");
+const loadDesignA = document.getElementById('loadDesignA');
+const loadDesignB = document.getElementById('loadDesignB');
 const figmaOrigin = "https://www.figma.com";
 const nodeIdString = new Map();
 const logs = [];
+
+const linkDesignA = "https://embed.figma.com/proto/z20lUWS0tBGrOAjKau6l8Z/V1?page-id=352%3A1986&client-id=btHqp9cUuCh9SaCCD8y03x&node-id=352-3477&viewport=193%2C344%2C0.6&scaling=scale-down&content-scaling=fixed&starting-point-node-id=352%3A3477&embed-host=share";
+const linkDesignB = "https://embed.figma.com/proto/z20lUWS0tBGrOAjKau6l8Z/V1?page-id=800%3A2592&client-id=btHqp9cUuCh9SaCCD8y03x&node-id=800-3863&viewport=193%2C344%2C0.6&scaling=scale-down&content-scaling=fixed&starting-point-node-id=800%3A3863&embed-host=share";
 
 // Map set
 nodeIdString.set("352:3477", "Log-In");
@@ -104,3 +109,16 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }, false);
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const figmaDesign = document.getElementById('figmaDesign');
+
+  loadDesignA.addEventListener("click", function () {
+    figmaDesign.src = linkDesignA;
+  });
+
+  loadDesignB.addEventListener("click", function () {
+    figmaDesign.src = linkDesignB;
+  });
+});
