@@ -37,6 +37,35 @@ nodeIdString.set("606:2452", "Wrong answer");
 nodeIdString.set("427:1796", "Chat (unlocked)");
 nodeIdString.set("596:1999", "Chat (locked)");
 
+
+
+nodeIdString.set("800:3863", "Log-In (V3B)");
+nodeIdString.set("800:3766", "Homepage (V3B)");
+nodeIdString.set("800:3817", "Homepage (V3B)");
+nodeIdString.set("800:2594", "My Books Page (V3B)");
+nodeIdString.set("800:3647", "Before Alchemy (V3B)");
+nodeIdString.set("800:3368", "Book - The Library at Mount Char (V3B)");
+nodeIdString.set("800:3188", "Book - Harry Potter (V3B)");
+nodeIdString.set("800:3685", "Book - Nevernight (V3B)");
+nodeIdString.set("800:3724", "Book - Jekyll & Hyde (V3B)");
+nodeIdString.set("800:3403", "Question - Mount Char (V3B)");
+nodeIdString.set("800:3504", "Question - Harry Potter (V3B)");
+nodeIdString.set("800:3295", "Chat (locked) (V3B)");
+nodeIdString.set("800:3439", "Right answer (V3B)");
+nodeIdString.set("800:3474", "Wrong answer (V3B)");
+nodeIdString.set("800:3223", "Chat (unlocked) (V3B)");
+nodeIdString.set("800:4194", "Chat(1) (V3B)");
+nodeIdString.set("800:3893", "Chat(2) (V3B)");
+nodeIdString.set("800:4142", "Chat(3) (V3B)");
+nodeIdString.set("800:4083", "Chat(4) (V3B)");
+nodeIdString.set("800:3935", "Chat(5) (V3B)");
+nodeIdString.set("800:4005", "Chat(6) (V3B)");
+nodeIdString.set("800:3609", "Alchemy (V3B)");
+nodeIdString.set("800:2822", "My Books Page (Empty) (V3B)");
+nodeIdString.set("800:2856", "My Books Page (Currently Reading) (V3B)");
+nodeIdString.set("800:2893", "My Books Page (Read) (V3b)");
+
+
 // Variables
 var timestamp = 0;
 var finishedLoading = false;
